@@ -18,7 +18,6 @@ print(f"Your School Number is: {Number}\n ")
 
 
 
-
 Name = input("Please enter your informations\nYour  name:")
 Surname = input("Your Surname:")
 Phone = input("Your Phone Number:")
@@ -37,7 +36,6 @@ print(f"Your School Number is: {Number}\n ")
 
 
 
-
 Name = input("Please enter your informations\nYour  name:")
 Surname = input("Your Surname:")
 Phone = input("Your Phone Number:")
@@ -51,9 +49,6 @@ total.update({f"{Number}":{
 
 print(total[Number])
 print(f"Your School Number is: {Number}\n ")
-
-
-
 
 
 
