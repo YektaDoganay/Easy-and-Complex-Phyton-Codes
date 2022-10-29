@@ -1,1 +1,63 @@
+total = {}
 
+Name = input("Please enter your informations\nYour  name:")
+Surname = input("Your Surname:")
+Phone = input("Your Phone Number:")
+Number = input("Your School Number:")
+
+total.update({f"{Number}":
+         {"Name":f"{Name}",
+          "Surname":f"{Surname}",
+          "Phone":f"{Phone}"}
+         })
+
+print(total[Number])
+print(f"Your School Number is: {Number}\n ")
+
+
+
+
+
+
+Name = input("Please enter your informations\nYour  name:")
+Surname = input("Your Surname:")
+Phone = input("Your Phone Number:")
+Number = input("Your School Number:")
+
+total.update({f"{Number}":{
+         "Name":f"{Name}",
+         "Surname":f"{Surname}",
+         "Phone":f"{Phone}",}
+         })
+
+print(total[Number])
+print(f"Your School Number is: {Number}\n ")
+
+
+
+
+
+
+Name = input("Please enter your informations\nYour  name:")
+Surname = input("Your Surname:")
+Phone = input("Your Phone Number:")
+Number = input("Your School Number:")
+
+total.update({f"{Number}":{
+         "Name":f"{Name}",
+         "Surname":f"{Surname}",
+         "Phone":f"{Phone}",}
+         })
+
+print(total[Number])
+print(f"Your School Number is: {Number}\n ")
+
+
+
+
+
+
+
+data = input("Please enter your school number to find your informations:\n")
+
+print(total[data])
