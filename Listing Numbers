@@ -1,0 +1,32 @@
+sayilar = []
+
+data = input("Lutfen Sayi Giriniz\n\n1.Sayiyi Giriniz: ")
+sayilar.append(data)
+sayilar1 = data
+
+data = input("2.Sayiyi Giriniz: ")
+sayilar.append(data)
+sayilar2 = data
+
+data = input("3.Sayiyi Giriniz: ")
+sayilar.append(data)
+sayilar3 = data
+
+data = input("4.Sayiyi Giriniz: ")
+sayilar.append(data)
+sayilar4 = data
+
+sayilar1234 =f"{sayilar1}",f"{sayilar2}",f"{sayilar3}",f"{sayilar4}"
+
+sayilar.sort()
+
+x = max(sayilar1234)
+y = min(sayilar1234)
+
+sayiort = (float(f"{sayilar1}")+float(f"{sayilar2}")+float(f"{sayilar3}")+float(f"{sayilar4}"))/4
+
+print("\n" + "Sayi Listesi = " + str(sayilar) + "\n")
+
+print("Maximum Sayidan Minumum Sayiyi Cikartma Sonucu  ==> " + f"{x}-{y} = " + str(float(x)-float(y)) + "\n")
+
+print("Sayilarin ortalamasi = "+ str(sayiort) + "\n")
