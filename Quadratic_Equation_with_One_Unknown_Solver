@@ -1,4 +1,4 @@
-data = input("Lutfen denklemi giriniz: ")
+data = input("Please, enter your equation with a space between each term: ")
 data = data.split(" ")
 
 data1 = []
@@ -78,10 +78,11 @@ print(f"c = {c}\n")
 
 
 if delta > 0:
-    print("Denklemin iki farkli reel koku bulunmaktadir: \n")
+    print("The equation has two diffirent roots: \n")
     print(f"x1 = {x1}")
     print(f"x2 = {x2}\n")
 elif delta == 0:
-    print(f"Denklemin tek koku bulunmakta: x = {x1}\n")
+    print(f"The equation has only one root: x = {x1}\n")
 else:
-    print("Denklemin reel koku yoktur.\n")
+    print("The equation has no real root.\n")
+
