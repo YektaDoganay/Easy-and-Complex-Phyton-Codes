@@ -1,0 +1,32 @@
+import random
+
+x =random.randint(0,100)
+
+y = 0
+right = int(input("How many rights do you want? (İt will affect your point. Be Careful!) = "))
+heal = right
+
+while right > 0:
+
+    right -= 1
+    y += 1
+    number = int(input("Please enter your number: "))
+
+    if number < x:
+        if 0 < x - number < 10:
+            print("You are so close try UP ↑")
+        else:
+            print("UP ↑")
+    elif number > x:
+        if 0 < number - x < 10:
+            print("You are so close try DOWN ↓")
+        else:
+            print("DOWN ↓")
+    elif number == x:
+        print("\nCongrulations!! You found the number!\n")
+        print("Your point ==> " + str(100 - ((100/heal) * (y-1))) + "\n")
+        break
+
+if right == 0:
+    print("\nGame Over!!     Your Point is 0\n")
+    print(f"The Number was {x}\n")
