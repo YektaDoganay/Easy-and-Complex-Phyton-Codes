@@ -1,3 +1,5 @@
+#For instance ==> 2x^2 +5x -25
+
 data = input("Please, enter your equation with a space between each term: ")
 data = data.split(" ")
 
