@@ -28,5 +28,5 @@ while right > 0:
         break
 
 if right == 0:
-    print("\nGame Over!!     Your Point is 0\n")
+    print("\nGame Over!!     Your Point is ==> 0\n")
     print(f"The Number was {x}\n")
