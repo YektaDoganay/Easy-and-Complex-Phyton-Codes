@@ -1,0 +1,209 @@
+import sys
+
+li1 = ["-","-","-","-","-","-","-","-","-"]
+
+
+def check_finish():
+
+    if li1[0] == li1[1] == li1[2] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+        
+    elif li1[0] == li1[1] == li1[3] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+
+    elif li1[0] == li1[3] == li1[6] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[0] == li1[3] == li1[6] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+
+    elif li1[0] == li1[4] == li1[8] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[0] == li1[4] == li1[8] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+
+    elif li1[1] == li1[4] == li1[7] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[1] == li1[4] == li1[7] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+    
+    elif li1[2] == li1[5] == li1[8] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[2] == li1[5] == li1[8] == "O":
+        print("Game is done! O WİNNER!")
+        sys.exit()
+
+    elif li1[3] == li1[4] == li1[5] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[3] == li1[4] == li1[5] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+
+    elif li1[6] == li1[7] == li1[8] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[6] == li1[7] == li1[8] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+
+    elif li1[2] == li1[4] == li1[6] == "X":
+        print("Game is done! X WİNNER!\n")
+        sys.exit()
+
+    elif li1[2] == li1[4] == li1[6] == "O":
+        print("Game is done! O WİNNER!\n")
+        sys.exit()
+
+    elif list(li1).count("-") == 0:
+        print("DRAW!")
+        sys.exit()
+
+
+
+
+
+def play_X():
+
+    while True:
+
+        a = input("Please enter a slot for X: ")
+
+        if a == "1" and li1[0] == "-":
+            li1[0] = "X"           
+            break
+
+        elif a == "2" and li1[1] == "-":
+            li1[1] = "X"           
+            break
+
+        elif a == "3" and li1[2] == "-":
+            li1[2] = "X"          
+            break
+
+        elif a == "4" and li1[3] == "-":
+            li1[3] = "X" 
+            break
+
+        elif a == "5" and li1[4] == "-":
+            li1[4] = "X"            
+            break
+
+        elif a == "6" and li1[5] == "-":
+            li1[5] = "X"           
+            break
+
+        elif a == "7" and li1[6] == "-":
+            li1[6] = "X"           
+            break
+
+        elif a == "8" and li1[7] == "-":
+            li1[7] = "X"           
+            break
+
+        elif a == "9" and li1[8] == "-":
+            li1[8] = "X"            
+            break
+
+        elif a != "1" and a != "2" and a != "3" and a != "4" and a != "5" and a != "6" and a != "7" and a != "8":
+            print("\nPlease enter a number 1 to 9!!\n")
+
+
+        elif li1[0] == "X" or li1[1] == "X" or li1[2] == "X" or li1[3] == "X" or li1[4] == "X" or li1[5] == "X" or li1[6] == "X" or li1[7] == "X" or li1[8] == "X":
+            print("\nPlease enter another slot!!\n")
+
+
+
+
+
+def play_O():
+    
+
+    while True:
+
+        a = input("Please enter a slot for O: ")
+
+        if a == "1" and li1[0] == "-":
+            li1[0] = "O"
+            break
+
+        elif a == "2" and li1[1] == "-":
+            li1[1] = "O"           
+            break
+
+        elif a == "3" and li1[2] == "-":
+            li1[2] = "O"           
+            break
+
+        elif a == "4" and li1[3] == "-":
+            li1[3] = "O"            
+            break
+
+        elif a == "5" and li1[4] == "-":
+            li1[4] = "O"            
+            break
+
+        elif a == "6" and li1[5] == "-":
+            li1[5] = "O"           
+            break
+
+        elif a == "7" and li1[6] == "-":
+            li1[6] = "O"           
+            break
+
+        elif a == "8" and li1[7] == "-":
+            li1[7] = "O"          
+            break
+
+        elif a == "9" and li1[8] == "-":
+            li1[8] = "O"
+            break
+
+        elif a != "1" and a != "2" and a != "3" and a != "4" and a != "5" and a != "6" and a != "7" and a != "8":
+            print("\nPlease enter a number 1 to 9!!\n")
+
+
+        elif li1[0] == "X" or li1[1] == "X" or li1[2] == "X" or li1[3] == "X" or li1[4] == "X" or li1[5] == "X" or li1[6] == "X" or li1[7] == "X" or li1[8] == "X":
+            print("\nPlease enter another slot!!\n")
+
+
+        
+
+def show_board():
+    x = f"""\n {li1[0]} | {li1[1]} | {li1[2]}             1 | 2 | 3
+ {li1[3]} | {li1[4]} | {li1[5]}             4 | 5 | 6
+ {li1[6]} | {li1[7]} | {li1[8]}             7 | 8 | 9\n"""  
+    print(x)
+    
+            
+
+
+x = 0
+while x < 5 :
+    x = x + 1
+    if x == 5:
+        play_X()
+        show_board()
+        check_finish()
+    else:
+        play_X()
+        show_board()
+        check_finish()
+
+        play_O()
+        show_board()
+        check_finish()
