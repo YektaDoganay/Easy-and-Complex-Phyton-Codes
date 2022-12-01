@@ -6,71 +6,71 @@ li1 = ["-","-","-","-","-","-","-","-","-"]
 def check_finish():
 
     if li1[0] == li1[1] == li1[2] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
         
     elif li1[0] == li1[1] == li1[3] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[0] == li1[3] == li1[6] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[0] == li1[3] == li1[6] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[0] == li1[4] == li1[8] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[0] == li1[4] == li1[8] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[1] == li1[4] == li1[7] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[1] == li1[4] == li1[7] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
     
     elif li1[2] == li1[5] == li1[8] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[2] == li1[5] == li1[8] == "O":
-        print("Game is done! O WİNNER!")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[3] == li1[4] == li1[5] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[3] == li1[4] == li1[5] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[6] == li1[7] == li1[8] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[6] == li1[7] == li1[8] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[2] == li1[4] == li1[6] == "X":
-        print("Game is done! X WİNNER!\n")
+        print("Game is done! X WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif li1[2] == li1[4] == li1[6] == "O":
-        print("Game is done! O WİNNER!\n")
+        print("Game is done! O WİNNER!".center(100, "-") + "\n")
         sys.exit()
 
     elif list(li1).count("-") == 0:
-        print("DRAW!")
+        print("DRAW!".center(50, "-"))
         sys.exit()
 
 
